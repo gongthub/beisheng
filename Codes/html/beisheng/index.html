@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
 <html lang="zh-cn">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
@@ -15,9 +14,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="css/video-js.css" rel="stylesheet">
 </head>
-
 <body>
     <!--0 头部-->
     <div class="w-topcontent hidden-xs hidden-sm" role="navigation">
@@ -36,9 +33,9 @@
     <!--1 头部联系方式-->
     <div class="w-topcontinct hidden-xs hidden-sm">
         <div class="w-topcontinct-top">
-            <div class="container">
+            <div class="container ">
                 <!--模块内容-->
-                <div class="row fontsize-12">
+                <div class="row  fontsize-12">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-5">
                         <img src="image/5.png" />
                     </div>
@@ -47,7 +44,7 @@
                         <img class="w-topcontinct-top-img" src="image/1.png" style="width: 35px;height: 35px;" />上海市金沙江路588号四楼
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                        <div style="position: absolute;"><img class="w-topcontinct-top-img" src="image/2.png " /></div>
+                        <div style="position: absolute;"><img class="w-topcontinct-top-img" src="image/2.png" /></div>
                         <div style="margin-left: 35px;margin-top: -10px;">
                             +86 021233332</br>
                             +86 021233332
@@ -73,7 +70,7 @@
             </div>
             <div class="collapse navbar-collapse navbar-responsive-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active "><a href="#">首页</a></li>
+                    <li class="active"><a href="#">首页</a></li>
                     <li>
                         <a>关于北盛</a>
                         <div class="w-secmenu">
@@ -124,7 +121,7 @@
         </div>
     </div>
     <!--3 轮播展示-->
-    <div id="div-index-img-carousel" class="carousel slide w-indexbanner">
+    <div id="myCarousel" class="carousel slide w-indexbanner">
         <div id="carousel-example-vertical" class="carousel vertical slide">
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
@@ -161,30 +158,81 @@
                         </div>
                     </div>
                 </div>
+                <div class="item">
+                    <a href="#"><img src="image/banner3.jpg" alt=""></a>
+                    <div class="myCarousel-div-desc">
+                        <div class="myCarousel-div-text">
+                            33333333333333333
+                        </div>
+                        <div class="myCarousel-div-optionbtn">
+                            <a class="myCarousel-div-optionbtn-prev" href="#carousel-example-vertical" role="button" data-slide="prev"><img /></a>
+                            <br />
+                            <a class="myCarousel-div-optionbtn-next" href="#carousel-example-vertical" role="button" data-slide="next"><img /></a>
+                        </div>
+
+                        <div class="myCarousel-div-optionbtn-to">
+                            <a href="#">查看详细</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="image/banner1.jpg" alt=""></a>
+                    <div class="myCarousel-div-desc">
+                        <div class="myCarousel-div-text">
+                            44444444444444444
+                        </div>
+                        <div class="myCarousel-div-optionbtn">
+                            <a class="myCarousel-div-optionbtn-prev" href="#carousel-example-vertical" role="button" data-slide="prev"><img /></a>
+                            <br />
+                            <a class="myCarousel-div-optionbtn-next" href="#carousel-example-vertical" role="button" data-slide="next"><img /></a>
+                        </div>
+
+                        <div class="myCarousel-div-optionbtn-to">
+                            <a href="#">查看详细</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="image/banner3.jpg" alt=""></a>
+                    <div class="myCarousel-div-desc">
+                        <div class="myCarousel-div-text">
+                            55555555555555
+                        </div>
+                        <div class="myCarousel-div-optionbtn">
+                            <a class="myCarousel-div-optionbtn-prev" href="#carousel-example-vertical" role="button" data-slide="prev"><img /></a>
+                            <br />
+                            <a class="myCarousel-div-optionbtn-next" href="#carousel-example-vertical" role="button" data-slide="next"><img /></a>
+                        </div>
+
+                        <div class="myCarousel-div-optionbtn-to">
+                            <a href="#">查看详细</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!--<div id="myCarousel " class="carousel slide w-indexbanner ">
-        <ol class="carousel-indicators ">
-            <li data-target="#myCarousel " data-slide-to="0 " class="active "></li>
-            <li data-target="#myCarousel " data-slide-to="1 "></li>
-            <li data-target="#myCarousel " data-slide-to="2 "></li>
+    <!--<div id="myCarousel" class="carousel slide w-indexbanner">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
         <!-- Carousel items
-        <div class="carousel-inner ">
-            <div class="active item ">
-                <a href="# "><img src="image/banner1.jpg " alt=" "></a>
+        <div class="carousel-inner">
+            <div class="active item">
+                <a href="#"><img src="image/banner1.jpg" alt=""></a>
             </div>
-            <div class="item ">
-                <a href="# "><img src="image/banner2.jpg " alt=" "></a>
+            <div class="item">
+                <a href="#"><img src="image/banner2.jpg" alt=""></a>
             </div>
-            <div class="item ">
-                <a href="# "><img src="image/banner3.jpg " alt=" "></a>
+            <div class="item">
+                <a href="#"><img src="image/banner3.jpg" alt=""></a>
             </div>
         </div>
         <!-- Carousel nav
-        <a class="carousel-control left " href="#myCarousel " data-slide="prev "><span class="glyphicon glyphicon-chevron-left " aria-hidden="true "></span></a>
-        <a class="carousel-control right " href="#myCarousel " data-slide="next "><span class="glyphicon glyphicon-chevron-right " aria-hidden="true "></span></a>
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
     </div>-->
     <!--4 证照-->
     <div class="w-ind-wrap" id="div_Licence">
@@ -195,13 +243,13 @@
                     <a href="#" class="white">营业执照</a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <a href="#" class="white ">五项资质证书</a>
+                    <a href="#" class="white">五项资质证书</a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <a href="#" class="white ">安全生产许可证</a>
+                    <a href="#" class="white">安全生产许可证</a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <a href="#" class="white ">ISO认证证书</a>
+                    <a href="#" class="white">ISO认证证书</a>
                 </div>
             </div>
             <!--模块内容-->
@@ -252,57 +300,57 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 ">
-                    <div class="w-news-area ">
-                        <div class="w-course-img ">
-                            <div class="w-news-img w-news02 "></div>
-                            <div class="mask ">
-                                <span class="mask-span ">ISO认证证书</span>
-                                <a href="# " class="mask-btn ">点击进入</a>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="w-news-area">
+                        <div class="w-course-img">
+                            <div class="w-news-img w-news02"></div>
+                            <div class="mask">
+                                <span class="mask-span">ISO认证证书</span>
+                                <a href="#" class="mask-btn">点击进入</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 ">
-                    <div class="w-news-area ">
-                        <div class="w-course-img ">
-                            <div class="w-news-img w-news02 "></div>
-                            <div class="mask ">
-                                <span class="mask-span ">ISO认证证书</span>
-                                <a href="# " class="mask-btn ">点击进入</a>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="w-news-area">
+                        <div class="w-course-img">
+                            <div class="w-news-img w-news02"></div>
+                            <div class="mask">
+                                <span class="mask-span">ISO认证证书</span>
+                                <a href="#" class="mask-btn">点击进入</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 ">
-                    <div class="w-news-area ">
-                        <div class="w-course-img ">
-                            <div class="w-news-img w-news02 "></div>
-                            <div class="mask ">
-                                <span class="mask-span ">ISO认证证书</span>
-                                <a href="# " class="mask-btn ">点击进入</a>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="w-news-area">
+                        <div class="w-course-img">
+                            <div class="w-news-img w-news02"></div>
+                            <div class="mask">
+                                <span class="mask-span">ISO认证证书</span>
+                                <a href="#" class="mask-btn">点击进入</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 ">
-                    <div class="w-news-area ">
-                        <div class="w-course-img ">
-                            <div class="w-news-img w-news02 "></div>
-                            <div class="mask ">
-                                <span class="mask-span ">ISO认证证书</span>
-                                <a href="# " class="mask-btn ">点击进入</a>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="w-news-area">
+                        <div class="w-course-img">
+                            <div class="w-news-img w-news02"></div>
+                            <div class="mask">
+                                <span class="mask-span">ISO认证证书</span>
+                                <a href="#" class="mask-btn">点击进入</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 ">
-                    <div class="w-news-area ">
-                        <div class="w-course-img ">
-                            <div class="w-news-img w-news02 "></div>
-                            <div class="mask ">
-                                <span class="mask-span ">ISO认证证书</span>
-                                <a href="# " class="mask-btn ">点击进入</a>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="w-news-area">
+                        <div class="w-course-img">
+                            <div class="w-news-img w-news02"></div>
+                            <div class="mask">
+                                <span class="mask-span">ISO认证证书</span>
+                                <a href="#" class="mask-btn">点击进入</a>
                             </div>
                         </div>
                     </div>
@@ -663,527 +711,377 @@
             </div>
         </div>
     </div>
-    <!--7 视频-->
-    <div class="w-ind-wrap-video " id="div_video">
-        <div id="div-video-show">
-            <video id="div-index-video-show" class="video-js vjs-default-skin vjs-big-play-centered " controls preload="auto" poster="image/banner2.jpg " data-setup='{"example_option ":true}'>
-                <source src="http://vjs.zencdn.net/v/oceans.mp4 " type="video/mp4 ">
-                <source src="http://vjs.zencdn.net/v/oceans.webm " type="video/webm ">
-                <source src="http://vjs.zencdn.net/v/oceans.ogv " type="video/ogg ">
-                <p class="vjs-no-js ">
-                    To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/ " target="_blank ">supports HTML5 video</a>
-                </p>
-            </video>
+
+    <!--8 最新消息-->
+    <div class="w-news-wrap-div w-ind-wrap" id="div_news">
+        <div class="container d-new-show">
+            <!--模块标题-->
+            <div class="row">
+                <div class="col-xs-12">
+                    <h5 class="w-ind-tit">
+                        最新消息
+                    </h5>
+                </div>
+            </div>
+            <div class="w-news-wrap-div-title">
+                最新消息最新消息最新消息最新消息最新消息最新消息最新消息最新消息最新消息最新消息最新消息最新消息最新消息最新消息最新消息最新消息最新消息最新消息最新消息最新消息
+            </div>
+            <!--模块内容-->
+            <div class="row d-new-center">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <a class="d-new-center-a" href="#">
+                        <div class="w-news-item-center">
+                            <div class="w-news-item-center-img">
+                                <img class="w-news-item-center-img-m" src="image/2.png" />
+                                <img class="w-news-item-center-img-o" style="display: none;" src="image/1.png" />
+                            </div>
+                            <span class="w-news-item-center-span-title">营业执照</span>
+                            <div class="w-news-item-center-img-text">营业执照营业执照营业执照营业执照营业执照</div>
+                            <span class="w-news-item-center-span-date">2017.4.20</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <a class="d-new-center-a" href="#">
+                        <div class="w-news-item-center">
+                            <div class="w-news-item-center-img">
+                                <img class="w-news-item-center-img-m" src="image/2.png" />
+                                <img class="w-news-item-center-img-o" style="display: none;" src="image/1.png" />
+                            </div>
+                            <span class="w-news-item-center-span-title">营业执照</span>
+                            <div class="w-news-item-center-img-text">营业执照营业执照营业执照营业执照营业执照</div>
+                            <span class="w-news-item-center-span-date">2017.4.20</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <a class="d-new-center-a" href="#">
+                        <div class="w-news-item-center">
+                            <div class="w-news-item-center-img">
+                                <img class="w-news-item-center-img-m" src="image/2.png" />
+                                <img class="w-news-item-center-img-o" style="display: none;" src="image/1.png" />
+                            </div>
+                            <span class="w-news-item-center-span-title">营业执照</span>
+                            <div class="w-news-item-center-img-text">营业执照营业执照营业执照营业执照营业执照</div>
+                            <span class="w-news-item-center-span-date">2017.4.20</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <a class="d-new-center-a" href="#">
+                        <div class="w-news-item-center">
+                            <div class="w-news-item-center-img">
+                                <img class="w-news-item-center-img-m" src="image/2.png" />
+                                <img class="w-news-item-center-img-o" style="display: none;" src="image/1.png" />
+                            </div>
+                            <span class="w-news-item-center-span-title">营业执照</span>
+                            <div class="w-news-item-center-img-text">营业执照营业执照营业执照营业执照营业执照</div>
+                            <span class="w-news-item-center-span-date">2017.4.20</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <a class="d-new-center-a" href="#">
+                        <div class="w-news-item-center">
+                            <div class="w-news-item-center-img">
+                                <img class="w-news-item-center-img-m" src="image/2.png" />
+                                <img class="w-news-item-center-img-o" style="display: none;" src="image/1.png" />
+                            </div>
+                            <span class="w-news-item-center-span-title">营业执照</span>
+                            <div class="w-news-item-center-img-text">营业执照营业执照营业执照营业执照营业执照</div>
+                            <span class="w-news-item-center-span-date">2017.4.20</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <a class="d-new-center-a" href="#">
+                        <div class="w-news-item-center">
+                            <div class="w-news-item-center-img">
+                                <img class="w-news-item-center-img-m" src="image/2.png" />
+                                <img class="w-news-item-center-img-o" style="display: none;" src="image/1.png" />
+                            </div>
+                            <span class="w-news-item-center-span-title">营业执照</span>
+                            <div class="w-news-item-center-img-text">营业执照营业执照营业执照营业执照营业执照</div>
+                            <span class="w-news-item-center-span-date">2017.4.20</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-    <!--2 新闻动态-->
-    <div class="w-news-wrap w-ind-wrap " id="div_new ">
-        <div class="container ">
+    <!--9 领导风采-->
+    <div class="w-ind-wrap" id="div_lender">
+        <div class="container">
             <!--模块标题-->
-            <div class="row ">
-                <div class="col-xs-12 ">
-                    <h5 class="w-ind-tit ">
-                        <a>
-                            <em>新闻动态</em>
-                            <span>News information</span>
-                        </a>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h5 class="w-ind-tit">
+                        领导风采<br />
+                        <img src="image/7.png" />
                     </h5>
                 </div>
             </div>
             <!--模块内容-->
-            <div class="row ">
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
-                    <div class="w-news-area ">
-                        <div class="w-course-img ">
-                            <div class="w-news-img w-news01 " style="background-image:url() "></div>
-                            <div class="mask ">
-                                <a href="# " class="mask-btn ">查看详情</a>
+            <div class="row div-lender-row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 div-lender-rowitemshow">
+                    <a class="w-lender-area-a" href="#">
+                        <div class="w-lender-area">
+                            <div class="w-lender-area-center">
+                                <div class="w-lender-area-center-img">
+                                    <img src="image/news2.jpg" />
+                                </div>
+                                <div class="w-lender-area-center-text">
+                                    <p class="w-lender-area-center-text-zh">你好好1</p>
+                                    <p class="w-lender-area-center-text-en">NI HAO</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="w-news-cont ">
-                            <h3 class="w-news-tit ">这里是新闻标题 这里是新闻标题 这里是新闻标题 这里是新闻标题 </h3>
-                            <h5 class="w-news-text ">这里是新闻内容这里是新闻内容这里是新闻内容,这里是新闻内容这里是新闻内容这里是新闻内容这里是新闻内容这里是新闻内容,这里是新闻内容这里是新闻内容</h5>
-                            <div class="w-news-adorn "></div>
-                        </div>
-                        <div class="w-news-date ">
-                            <h1>01</h1>
-                            <h2>Jan.2017</h2>
-                        </div>
-                        <!--下面链接是手机端时可以出现点击任意部位跳转详情-->
-                        <a href="# " class="w-news-href "></a>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
-                    <div class="w-news-area ">
-                        <div class="w-course-img ">
-                            <div class="w-news-img w-news02 "></div>
-                            <div class="mask ">
-                                <a href="# " class="mask-btn ">查看详情</a>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 div-lender-rowitemshow">
+                    <a class="w-lender-area-a" href="#">
+                        <div class="w-lender-area">
+                            <div class="w-lender-area-center">
+                                <div class="w-lender-area-center-img">
+                                    <img src="image/news2.jpg" />
+                                </div>
+                                <div class="w-lender-area-center-text">
+                                    <p class="w-lender-area-center-text-zh">你好好2</p>
+                                    <p class="w-lender-area-center-text-en">NI HAO</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="w-news-cont ">
-                            <h3 class="w-news-tit ">这里是新闻标题 这里是新闻标题 这里是新闻标题 这里是新闻标题 </h3>
-                            <h5 class="w-news-text ">这里是新闻内容这里是新闻内容这里是新闻内容,这里是新闻内容这里是新闻内容这里是新闻内容这里是新闻内容这里是新闻内容,这里是新闻内容这里是新闻内容</h5>
-                        </div>
-                        <div class="w-news-date ">
-                            <h1>02</h1>
-                            <h2>Jan.2017</h2>
-                        </div>
-                        <div class="w-news-adorn "></div>
-                        <a href="# " class="w-news-href "></a>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
-                    <div class="w-news-area ">
-                        <div class="w-course-img ">
-                            <div class="w-news-img w-news03 "></div>
-                            <div class="mask ">
-                                <a href="# " class="mask-btn ">查看详情</a>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 div-lender-rowitemshow">
+                    <a class="w-lender-area-a" href="#">
+                        <div class="w-lender-area">
+                            <div class="w-lender-area-center">
+                                <div class="w-lender-area-center-img">
+                                    <img src="image/news2.jpg" />
+                                </div>
+                                <div class="w-lender-area-center-text">
+                                    <p class="w-lender-area-center-text-zh">你好好3</p>
+                                    <p class="w-lender-area-center-text-en">NI HAO</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="w-news-cont ">
-                            <h3 class="w-news-tit ">这里是新闻标题 这里是新闻标题 这里是新闻标题 这里是新闻标题 </h3>
-                            <h5 class="w-news-text ">这里是新闻内容这里是新闻内容这里是新闻内容,这里是新闻内容这里是新闻内容这里是新闻内容这里是新闻内容这里是新闻内容,这里是新闻内容这里是新闻内容</h5>
-                        </div>
-                        <div class="w-news-date ">
-                            <h1>03</h1>
-                            <h2>Jan.2017</h2>
-                        </div>
-                        <div class="w-news-adorn "></div>
-                        <a href="# " class="w-news-href "></a>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
-                    <div class="w-news-area ">
-                        <div class="w-course-img ">
-                            <div class="w-news-img w-news04 "></div>
-                            <div class="mask ">
-                                <a href="# " class="mask-btn ">查看详情</a>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 div-lender-rowitemshow">
+                    <a class="w-lender-area-a" href="#">
+                        <div class="w-lender-area">
+                            <div class="w-lender-area-center">
+                                <div class="w-lender-area-center-img">
+                                    <img src="image/news2.jpg" />
+                                </div>
+                                <div class="w-lender-area-center-text">
+                                    <p class="w-lender-area-center-text-zh">你好好4</p>
+                                    <p class="w-lender-area-center-text-en">NI HAO</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="w-news-cont ">
-                            <h3 class="w-news-tit ">这里是新闻标题 这里是新闻标题 这里是新闻标题 这里是新闻标题 </h3>
-                            <h5 class="w-news-text ">这里是新闻内容这里是新闻内容这里是新闻内容,这里是新闻内容这里是新闻内容这里是新闻内容这里是新闻内容这里是新闻内容,这里是新闻内容这里是新闻内容</h5>
-                        </div>
-                        <div class="w-news-date ">
-                            <h1>04</h1>
-                            <h2>Jan.2017</h2>
-                        </div>
-                        <div class="w-news-adorn "></div>
-                        <a href="# " class="w-news-href "></a>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
-                    <div class="w-news-area ">
-                        <div class="w-course-img ">
-                            <div class="w-news-img w-news05 "></div>
-                            <div class="mask ">
-                                <a href="# " class="mask-btn ">查看详情</a>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 div-lender-rowitemshow">
+                    <a class="w-lender-area-a" href="#">
+                        <div class="w-lender-area">
+                            <div class="w-lender-area-center">
+                                <div class="w-lender-area-center-img">
+                                    <img src="image/news2.jpg" />
+                                </div>
+                                <div class="w-lender-area-center-text">
+                                    <p class="w-lender-area-center-text-zh">你好好5</p>
+                                    <p class="w-lender-area-center-text-en">NI HAO</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="w-news-cont ">
-                            <h3 class="w-news-tit ">这里是新闻标题 这里是新闻标题 这里是新闻标题 这里是新闻标题 </h3>
-                            <h5 class="w-news-text ">这里是新闻内容这里是新闻内容这里是新闻内容,这里是新闻内容这里是新闻内容这里是新闻内容这里是新闻内容这里是新闻内容,这里是新闻内容这里是新闻内容</h5>
-                        </div>
-                        <div class="w-news-date ">
-                            <h1>05</h1>
-                            <h2>Jan.2017</h2>
-                        </div>
-                        <div class="w-news-adorn "></div>
-                        <a href="# " class="w-news-href "></a>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
-                    <div class="w-news-area ">
-                        <div class="w-course-img ">
-                            <div class="w-news-img w-news06 "></div>
-                            <div class="mask ">
-                                <a href="# " class="mask-btn ">查看详情</a>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 div-lender-rowitemshow">
+                    <a class="w-lender-area-a" href="#">
+                        <div class="w-lender-area">
+                            <div class="w-lender-area-center">
+                                <div class="w-lender-area-center-img">
+                                    <img src="image/news2.jpg" />
+                                </div>
+                                <div class="w-lender-area-center-text">
+                                    <p class="w-lender-area-center-text-zh">你好好6</p>
+                                    <p class="w-lender-area-center-text-en">NI HAO</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="w-news-cont ">
-                            <h3 class="w-news-tit ">这里是新闻标题 这里是新闻标题 这里是新闻标题 这里是新闻标题 </h3>
-                            <h5 class="w-news-text ">这里是新闻内容这里是新闻内容这里是新闻内容,这里是新闻内容这里是新闻内容这里是新闻内容这里是新闻内容这里是新闻内容,这里是新闻内容这里是新闻内容</h5>
-                        </div>
-                        <div class="w-news-date ">
-                            <h1>06</h1>
-                            <h2>Jan.2017</h2>
-                        </div>
-                        <div class="w-news-adorn "></div>
-                        <a href="# " class="w-news-href "></a>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <!--3 合作院校-->
-    <div class="w-partner-wrap w-ind-wrap " id="div_school ">
-        <div class="container ">
-            <!--模块标题-->
-            <div class="row ">
-                <div class="col-xs-12 ">
-                    <h5 class="w-ind-tit ">
-                        <a>
-                            <em>合作院校</em>
-                            <span>Partner Institutions</span>
-                        </a>
-                    </h5>
-                </div>
-            </div>
-            <!--模块内容-->
-            <div class="row ">
-                <div class="col-xs-6 col-sm-4 col-md-3 ">
-                    <div class="w-partner-area ">
-                        <img class="w-partner-img " src="image/partner1.jpg " alt=" ">
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 ">
-                    <div class="w-partner-area ">
-                        <img class="w-partner-img " src="image/partner1.jpg " alt=" ">
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 ">
-                    <div class="w-partner-area ">
-                        <img class="w-partner-img " src="image/partner1.jpg " alt=" ">
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 ">
-                    <div class="w-partner-area ">
-                        <img class="w-partner-img " src="image/partner1.jpg " alt=" ">
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 ">
-                    <div class="w-partner-area ">
-                        <img class="w-partner-img " src="image/partner1.jpg " alt=" ">
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 ">
-                    <div class="w-partner-area ">
-                        <img class="w-partner-img " src="image/partner1.jpg " alt=" ">
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 ">
-                    <div class="w-partner-area ">
-                        <img class="w-partner-img " src="image/partner1.jpg " alt=" ">
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-3 ">
-                    <div class="w-partner-area ">
-                        <img class="w-partner-img " src="image/partner1.jpg " alt=" ">
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!--10 人才宣言-->
+    <div class="w-ind-wrap" id="div_company_pos">
+        <div class="div-company-pos-title">看见了看见就立刻就撒旦快快快快快快快快快快快快快快快快</div>
+        <div class="div-company-pos-desc">空间撒大量开始就打了卡时间的卡拉是京东卡拉斯的快乐就爱上大克拉数据的卡拉是健康的教案设计打开手机打卡时间的空间撒</div>
     </div>
-    <!--4 TOP 专业-->
-    <div class="w-major-wrap w-ind-wrap " id="div_pro ">
-        <div class="container ">
-            <div class="row ">
-                <div class="col-xs-12 ">
-                    <h5 class="w-ind-tit ">
-                        <a>
-                            <em>TOP 专业</em>
-                            <span>Top major</span>
-                        </a>
-                    </h5>
-                </div>
-            </div>
-            <div class="row ">
-                <div class="col-xs-6 col-sm-3 col-md-2 ">
-                    <div class="w-major-area ">
-                        <img class="w-major-img " src="image/major1.png " alt=" ">
-                        <span class="w-major-text ">留学专业一</span>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-3 col-md-2 ">
-                    <div class="w-major-area ">
-                        <img class="w-major-img " src="image/major1.png " alt=" ">
-                        <span class="w-major-text ">留学专业一</span>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-3 col-md-2 ">
-                    <div class="w-major-area ">
-                        <img class="w-major-img " src="image/major1.png " alt=" ">
-                        <span class="w-major-text ">留学专业一</span>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-3 col-md-2 ">
-                    <div class="w-major-area ">
-                        <img class="w-major-img " src="image/major1.png " alt=" ">
-                        <span class="w-major-text ">留学专业一</span>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-3 col-md-2 ">
-                    <div class="w-major-area ">
-                        <img class="w-major-img " src="image/major1.png " alt=" ">
-                        <span class="w-major-text ">留学专业一</span>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-3 col-md-2 ">
-                    <div class="w-major-area ">
-                        <img class="w-major-img " src="image/major1.png " alt=" ">
-                        <span class="w-major-text ">留学专业一</span>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-3 col-md-2 ">
-                    <div class="w-major-area ">
-                        <img class="w-major-img " src="image/major1.png " alt=" ">
-                        <span class="w-major-text ">留学专业一</span>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-3 col-md-2 ">
-                    <div class="w-major-area ">
-                        <img class="w-major-img " src="image/major1.png " alt=" ">
-                        <span class="w-major-text ">留学专业一</span>
-                    </div>
-                </div>
-            </div>
+    <!--11 公司文化-->
+    <div class="w-ind-wrap" id="div_company_cul">
+        <!--模块标题-->
+        <div class="row div-company-cul-img">
+            <img src="image/banner1.jpg" alt="">
         </div>
-    </div>
-    <!--5 成功案例-->
-    <div class="w-success-wrap w-ind-wrap " id="div_case ">
-        <div class="container ">
-            <div class="row ">
-                <div class="col-xs-12 ">
-                    <h5 class="w-ind-tit ">
-                        <a>
-                            <em>成功案例</em>
-                            <span>successful case</span>
-                        </a>
-                    </h5>
-                </div>
-            </div>
-            <div class="row ">
-                <div class="col-sm-4 col-md-3 ">
-                    <div class="w-success-area ">
-                        <div class="w-success-img "></div>
-                        <div class="w-success-name ">
-                            <p>john丨普林斯顿大学</p>
-                            <p>Princeton University</p>
-                        </div>
-                        <div class="w-success-text ">
-                            <p>经济学的双学位是他转专业的契机，他越来越想去实现更多的人生价值。他从清华的本科生物第一、到北大光华的金融硕士、再到西北大学的凯洛格商学院的助研，最后申请到了普林斯顿大学的经济学博士。经济学的双学位是他转专业的契机，他越来越想去实现更多的人生价值。他从清华的本科生物第一、到北大光华的金融硕士、再到西北大学的凯洛格商学院的助研，最后申请到了普林斯顿大学的经济学博士。经济学的双学位是他转专业的契机，他越来越想去实现更多的人生价值。他从清华的本科生物第一、到北大光华的金融硕士、再到西北大学的凯洛格商学院的助研，最后申请到了普林斯顿大学的经济学博士。</p>
-                        </div>
+        <div class="w-ind-wrap div-company-cul-show">
+            <div class="container  d-company-cul">
+                <!--模块标题-->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h5 class="w-ind-tit d-company-cul-title">
+                            公司文化<br />
+                            <img src="image/7.png" />
+                        </h5>
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-3 ">
-                    <div class="w-success-area ">
-                        <div class="w-success-img "></div>
-                        <div class="w-success-name ">
-                            <p>john丨普林斯顿大学</p>
-                            <p>Princeton University</p>
-                        </div>
-                        <div class="w-success-text ">
-                            <p>经济学的双学位是他转专业的契机，他越来越想去实现更多的人生价值。他从清华的本科生物第一、到北大光华的金融硕士、再到西北大学的凯洛格商学院的助研，最后申请到了普林斯顿大学的经济学博士。经济学的双学位是他转专业的契机，他越来越想去实现更多的人生价值。他从清华的本科生物第一、到北大光华的金融硕士、再到西北大学的凯洛格商学院的助研，最后申请到了普林斯顿大学的经济学博士。经济学的双学位是他转专业的契机，他越来越想去实现更多的人生价值。他从清华的本科生物第一、到北大光华的金融硕士、再到西北大学的凯洛格商学院的助研，最后申请到了普林斯顿大学的经济学博士。</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-3 ">
-                    <div class="w-success-area ">
-                        <div class="w-success-img "></div>
-                        <div class="w-success-name ">
-                            <p>john丨普林斯顿大学</p>
-                            <p>Princeton University</p>
-                        </div>
-                        <div class="w-success-text ">
-                            <p>经济学的双学位是他转专业的契机，他越来越想去实现更多的人生价值。他从清华的本科生物第一、到北大光华的金融硕士、再到西北大学的凯洛格商学院的助研，最后申请到了普林斯顿大学的经济学博士。经济学的双学位是他转专业的契机，他越来越想去实现更多的人生价值。他从清华的本科生物第一、到北大光华的金融硕士、再到西北大学的凯洛格商学院的助研，最后申请到了普林斯顿大学的经济学博士。经济学的双学位是他转专业的契机，他越来越想去实现更多的人生价值。他从清华的本科生物第一、到北大光华的金融硕士、再到西北大学的凯洛格商学院的助研，最后申请到了普林斯顿大学的经济学博士。</p>
+                <!--模块内容-->
+                <div class="row d-company-cul-center">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 d-company-cul-item">
+                        <div class="w-cul-area">
+                            <div class="w-company-cul-item-center">
+                                <div class="w-company-cul-img">
+                                    <img src="image/news1.jpg" />
+                                </div>
+                                <div class="w-company-cul-date"><span>JUNE 10.2016</span></div>
+                                <div class="w-company-cul-text-title">花花花花说大声花花花花说大声</div>
+                                <div class="w-company-cul-text-context">花花花花说大声花花花花说大声花花花花说大声花花花花说大声花花花花说大声花花花花说大声</div>
+                                <div class="w-company-cul-text-btn"><a href="#">详情</a></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-4 col-md-3 ">
-                    <div class="w-success-area ">
-                        <div class="w-success-img "></div>
-                        <div class="w-success-name ">
-                            <p>john丨普林斯顿大学</p>
-                            <p>Princeton University</p>
-                        </div>
-                        <div class="w-success-text ">
-                            <p>经济学的双学位是他转专业的契机，他越来越想去实现更多的人生价值。他从清华的本科生物第一、到北大光华的金融硕士、再到西北大学的凯洛格商学院的助研，最后申请到了普林斯顿大学的经济学博士。经济学的双学位是他转专业的契机，他越来越想去实现更多的人生价值。他从清华的本科生物第一、到北大光华的金融硕士、再到西北大学的凯洛格商学院的助研，最后申请到了普林斯顿大学的经济学博士。经济学的双学位是他转专业的契机，他越来越想去实现更多的人生价值。他从清华的本科生物第一、到北大光华的金融硕士、再到西北大学的凯洛格商学院的助研，最后申请到了普林斯顿大学的经济学博士。</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-3 ">
-                    <div class="w-success-area ">
-                        <div class="w-success-img "></div>
-                        <div class="w-success-name ">
-                            <p>john丨普林斯顿大学</p>
-                            <p>Princeton University</p>
-                        </div>
-                        <div class="w-success-text ">
-                            <p>经济学的双学位是他转专业的契机，他越来越想去实现更多的人生价值。他从清华的本科生物第一、到北大光华的金融硕士、再到西北大学的凯洛格商学院的助研，最后申请到了普林斯顿大学的经济学博士。经济学的双学位是他转专业的契机，他越来越想去实现更多的人生价值。他从清华的本科生物第一、到北大光华的金融硕士、再到西北大学的凯洛格商学院的助研，最后申请到了普林斯顿大学的经济学博士。经济学的双学位是他转专业的契机，他越来越想去实现更多的人生价值。他从清华的本科生物第一、到北大光华的金融硕士、再到西北大学的凯洛格商学院的助研，最后申请到了普林斯顿大学的经济学博士。</p>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 d-company-cul-item">
+                        <div class="w-cul-area">
+                            <div class="w-company-cul-item-center">
+                                <div class="w-company-cul-img">
+                                    <img src="image/news1.jpg" />
+                                </div>
+                                <div class="w-company-cul-date"><span>JUNE 10.2016</span></div>
+                                <div class="w-company-cul-text-title">花花花花说大声花花花花说大声</div>
+                                <div class="w-company-cul-text-context">花花花花说大声花花花花说大声花花花花说大声花花花花说大声花花花花说大声花花花花说大声</div>
+                                <div class="w-company-cul-text-btn"><a href="#">详情</a></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-4 col-md-3 ">
-                    <div class="w-success-area ">
-                        <div class="w-success-img "></div>
-                        <div class="w-success-name ">
-                            <p>john丨普林斯顿大学</p>
-                            <p>Princeton University</p>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 d-company-cul-item">
+                        <div class="w-cul-area">
+                            <div class="w-company-cul-item-center">
+                                <div class="w-company-cul-img">
+                                    <img src="image/news1.jpg" />
+                                </div>
+                                <div class="w-company-cul-date"><span>JUNE 10.2016</span></div>
+                                <div class="w-company-cul-text-title">花花花花说大声花花花花说大声</div>
+                                <div class="w-company-cul-text-context">花花花花说大声花花花花说大声花花花花说大声花花花花说大声花花花花说大声花花花花说大声</div>
+                                <div class="w-company-cul-text-btn"><a href="#">详情</a></div>
+                            </div>
                         </div>
-                        <div class="w-success-text ">
-                            <p>经济学的双学位是他转专业的契机，他越来越想去实现更多的人生价值。他从清华的本科生物第一、到北大光华的金融硕士、再到西北大学的凯洛格商学院的助研，最后申请到了普林斯顿大学的经济学博士。经济学的双学位是他转专业的契机，他越来越想去实现更多的人生价值。他从清华的本科生物第一、到北大光华的金融硕士、再到西北大学的凯洛格商学院的助研，最后申请到了普林斯顿大学的经济学博士。经济学的双学位是他转专业的契机，他越来越想去实现更多的人生价值。他从清华的本科生物第一、到北大光华的金融硕士、再到西北大学的凯洛格商学院的助研，最后申请到了普林斯顿大学的经济学博士。</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 d-company-cul-item">
+                        <div class="w-cul-area">
+                            <div class="w-company-cul-item-center">
+                                <div class="w-company-cul-img">
+                                    <img src="image/news1.jpg" />
+                                </div>
+                                <div class="w-company-cul-date"><span>JUNE 10.2016</span></div>
+                                <div class="w-company-cul-text-title">花花花花说大声花花花花说大声</div>
+                                <div class="w-company-cul-text-context">花花花花说大声花花花花说大声花花花花说大声花花花花说大声花花花花说大声花花花花说大声</div>
+                                <div class="w-company-cul-text-btn"><a href="#">详情</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 d-company-cul-item">
+                        <div class="w-cul-area">
+                            <div class="w-company-cul-item-center">
+                                <div class="w-company-cul-img">
+                                    <img src="image/news1.jpg" />
+                                </div>
+                                <div class="w-company-cul-date"><span>JUNE 10.2016</span></div>
+                                <div class="w-company-cul-text-title">花花花花说大声花花花花说大声</div>
+                                <div class="w-company-cul-text-context">花花花花说大声花花花花说大声花花花花说大声花花花花说大声花花花花说大声花花花花说大声</div>
+                                <div class="w-company-cul-text-btn"><a href="#">详情</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 d-company-cul-item">
+                        <div class="w-cul-area">
+                            <div class="w-company-cul-item-center">
+                                <div class="w-company-cul-img">
+                                    <img src="image/news1.jpg" />
+                                </div>
+                                <div class="w-company-cul-date"><span>JUNE 10.2016</span></div>
+                                <div class="w-company-cul-text-title">花花花花说大声花花花花说大声</div>
+                                <div class="w-company-cul-text-context">花花花花说大声花花花花说大声花花花花说大声花花花花说大声花花花花说大声花花花花说大声</div>
+                                <div class="w-company-cul-text-btn"><a href="#">详情</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!--版权信息-->
-    <div class="w-footer ">
-        <div class="w-footer-top ">
-            <div class="container ">
-                <div class="row ">
-                    <dl class="col-xs-4 col-sm-3 col-md-2 col-lg-1 w-footer-top-dl hidden-xs hidden-sm ">
-                        <dt class="w-footer-top-dt ">
-                            <a href="# ">语言培训</a>
-                        </dt>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                    </dl>
-                    <dl class="col-xs-4 col-sm-3 col-md-2 col-lg-1 w-footer-top-dl hidden-xs hidden-sm ">
-                        <dt class="w-footer-top-dt ">
-                            <a href="# ">语言培训</a>
-                        </dt>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                    </dl>
-                    <dl class="col-xs-4 col-sm-3 col-md-2 col-lg-1 w-footer-top-dl hidden-xs hidden-sm ">
-                        <dt class="w-footer-top-dt ">
-                            <a href="# ">语言培训</a>
-                        </dt>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                    </dl>
-                    <dl class="col-xs-4 col-sm-3 col-md-2 col-lg-1 w-footer-top-dl hidden-xs hidden-sm ">
-                        <dt class="w-footer-top-dt ">
-                            <a href="# ">语言培训</a>
-                        </dt>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                    </dl>
-                    <dl class="col-xs-4 col-sm-3 col-md-2 col-lg-1 w-footer-top-dl hidden-xs hidden-sm ">
-                        <dt class="w-footer-top-dt ">
-                            <a href="# ">语言培训</a>
-                        </dt>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                    </dl>
-                    <dl class="col-xs-4 col-sm-3 col-md-2 col-lg-1 w-footer-top-dl hidden-xs hidden-sm ">
-                        <dt class="w-footer-top-dt ">
-                            <a href="# ">语言培训</a>
-                        </dt>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                        <dd class="w-footer-top-dd ">
-                            <a href="# ">分支展示</a>
-                        </dd>
-                    </dl>
-                    <!--二维码-->
-                    <dl class="col-md-12 col-lg-2 w-footer-top-dl ">
-                        <dt class="w-footer-top-dt ">
-                            <img class="w-qrcode " src="image/qrcode_for_weibo.jpg " alt=" ">
-                        </dt>
-                        <dd class="w-footer-top-dd ">
-                        </dd>
-                    </dl>
+    <div class="w-footer">
+        <div class="w-footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-5">
+                        <img src="image/5.png" />
+                        <div style="width:80% ;margin: 0 auto;">
+                            回答是大家哈手机看的话就撒谎的回答是大家哈手机看的话就撒谎的回答是大家哈手机看的话就撒谎的
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <span>我们的服务</span>
+                        <ul>
+                            <li><img src="image/logo.png" />哈哈哈</li>
+                            <li><img src="image/logo.png" />哈哈哈</li>
+                            <li><img src="image/logo.png" />哈哈哈</li>
+                            <li><img src="image/logo.png" />哈哈哈</li>
+                            <li><img src="image/logo.png" />哈哈哈</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+
+                        <span>联系我们</span>
+                        <div>
+                            地址：<br>
+                            上海市金沙江路<br>
+                            电话：<br>
+                            123456789<br>
+                            电话：<br>
+                            123456789<br>
+                            电话：<br>
+                            123456789<br>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="w-footer-bottom ">
-            <div class="container ">
-                <a href="# ">使用条款</a>
-                <a href="# ">隐私保护</a>
-                &nbsp;&nbsp;
-                <br class="visible-xs ">
-                某某地方某某前缀公司名 ©
-                <span class="toyear ">2017</span>
-                版权所有 *ICP备********号
+            <div class="w-footer-bottom">
+                <div class="container">
+                    <div class="w-footer-bottom-right">@2016 ALL RIGHTS RESERVED</div>
+
+                    <div class="w-footer-bottom-nv">
+                        <ul>
+                            <li>HOME</li>
+                            <li>SERVICES</li>
+                            <li>TERMS & CONDITION</li>
+                            <li>PRIVACY POLICY</li>
+                            <li>CONTRACT US</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!--js-->
-    <script src="js/jquery-3.1.1.min.js "></script>
-    <script src="js/bootstrap.min.js "></script>
-    <script src="js/wow.min.js "></script>
-    <script src="js/main.js "></script>
-    <script src="js/videojs-ie8.min.js "></script>
-    <script src="js/video.min.js "></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

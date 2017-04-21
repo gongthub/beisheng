@@ -7,10 +7,38 @@ new WOW().init();
 $(function() {
 	wbannertop();
 	indexProjectShow();
-	$(".div-project-center-btn-img").mouseover(function() {
+	$(".div-project-center-btn-img").mouseover(function () { 
 		initIndexProjectBtnMous(this);
 	});
+	
+	$(".d-new-center-a").mouseenter(function(){
+		$(this).find(".w-news-item-center-img-m").css("display","none");
+		$(this).find(".w-news-item-center-img-o").css("display","block");
+		$(this).find(".w-news-item-center-span-title").attr("class","w-news-item-center-span-title-hover")
+		
+	});
+	$(".d-new-center-a").mouseleave(function(){
+		$(this).find(".w-news-item-center-img-m").css("display","block");
+		$(this).find(".w-news-item-center-img-o").css("display","none");
+		$(this).find(".w-news-item-center-span-title-hover").attr("class","w-news-item-center-span-title")
+		
+	});
+	$(".w-lender-area-a").mouseenter(function(){
+		$(this).find(".w-lender-area-center").attr("class","w-lender-area-center-hover")
+		$(this).find(".w-lender-area-center-text").attr("class","w-lender-area-center-text-hover")
+		$(this).find(".w-lender-area-center-text-en").attr("class","w-lender-area-center-text-en-hover")
+		
+	});
+	$(".w-lender-area-a").mouseleave(function(){
+		$(this).find(".w-lender-area-center-hover").attr("class","w-lender-area-center")
+		$(this).find(".w-lender-area-center-text-hover").attr("class","w-lender-area-center-text")
+		$(this).find(".w-lender-area-center-text-en-hover").attr("class","w-lender-area-center-text-en")
+		
+	});
+
+	initLender();
 	showindexvideo();
+	
 })
 //resize
 $(window).resize(function() {
@@ -23,6 +51,7 @@ $('.navbar-nav>li>a').click(function() {
 	$('.navbar-nav>li').removeClass('active');
 	$(this).parent('li').addClass('active');
 })
+
 //轮播 js
 $('#div-index-img-carousel').carousel({
 	interval: false
@@ -36,6 +65,7 @@ function wbannertop() {
 	//var wnavhigh = $('.w-navwrap').height();
 	//$('.w-indexbanner').css('margin-top',wnavhigh);
 }
+
 
 //首页工程项目展示
 function initIndexProjectBtnMous(e) {
@@ -61,7 +91,7 @@ function initIndexProjectBtn() {
 	var showdiv = $(".div-project-center-btn-img");
 	if(showdiv != undefined && showdiv.length > 0) {
 		for(var i = 0; i < showdiv.length; i++) {
-			if($(showdiv[i]).hasClass("div-project-center-btn-img-active")) {
+			if($(showdiv[i]).hasClass("div-project-center-btn-img-active")) { 
 				showIdT = $(showdiv[i]).attr("showid");
 			}
 		}
@@ -116,4 +146,14 @@ function initvido() {
 		})
 
 	});
+}
+function initLender()
+{
+var lenderdivs=	$(".div-lender-row").find(".div-lender-rowitemshow");
+	if(lenderdivs!=undefined&&lenderdivs.length>4)
+	{ 
+		var htmls="<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'></div>";
+		$(lenderdivs[3]).after(htmls);
+		$("#txtshow").val($(".div-lender-row").html())
+	}
 }
