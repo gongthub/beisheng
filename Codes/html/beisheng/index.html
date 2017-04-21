@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="css/video-js.css" rel="stylesheet">
 </head>
 <body>
     <!--0 头部-->
@@ -711,7 +712,6 @@
             </div>
         </div>
     </div>
-
     <!--8 最新消息-->
     <div class="w-news-wrap-div w-ind-wrap" id="div_news">
         <div class="container d-new-show">
@@ -809,7 +809,21 @@
             </div>
         </div>
     </div>
-    <!--9 领导风采-->
+    <!--9 视频-->
+    <div class="w-ind-wrap-video" id="div_video">
+        <div id="div-video-show">
+            <video id="div-index-video-show" class="video-js vjs-default-skin vjs-big-play-centered " controls preload="auto" poster="image/banner2.jpg " data-setup='{"example_option ":true}'>
+                <source src="http://vjs.zencdn.net/v/oceans.mp4 " type="video/mp4 ">
+                <source src="http://vjs.zencdn.net/v/oceans.webm " type="video/webm ">
+                <source src="http://vjs.zencdn.net/v/oceans.ogv " type="video/ogg ">
+                <p class="vjs-no-js ">
+                    To view this video please enable JavaScript, and consider upgrading to a web browser that
+                    <a href="http://videojs.com/html5-video-support/ " target="_blank ">supports HTML5 video</a>
+                </p>
+            </video>
+        </div>
+    </div>
+    <!--10 领导风采-->
     <div class="w-ind-wrap" id="div_lender">
         <div class="container">
             <!--模块标题-->
@@ -917,12 +931,12 @@
             </div>
         </div>
     </div>
-    <!--10 人才宣言-->
+    <!--11 人才宣言-->
     <div class="w-ind-wrap" id="div_company_pos">
         <div class="div-company-pos-title">看见了看见就立刻就撒旦快快快快快快快快快快快快快快快快</div>
         <div class="div-company-pos-desc">空间撒大量开始就打了卡时间的卡拉是京东卡拉斯的快乐就爱上大克拉数据的卡拉是健康的教案设计打开手机打卡时间的空间撒</div>
     </div>
-    <!--11 公司文化-->
+    <!--12 公司文化-->
     <div class="w-ind-wrap" id="div_company_cul">
         <!--模块标题-->
         <div class="row div-company-cul-img">
@@ -1023,8 +1037,7 @@
             </div>
         </div>
     </div>
-
-    <!--版权信息-->
+    <!--13 版权信息-->
     <div class="w-footer">
         <div class="w-footer-top">
             <div class="container">
@@ -1083,5 +1096,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/videojs-ie8.min.js "></script>
+    <script src="js/video.min.js "></script>
 </body>
 </html>

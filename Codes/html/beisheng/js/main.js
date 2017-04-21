@@ -7,6 +7,7 @@ new WOW().init();
 $(function() {
 	wbannertop();
 	indexProjectShow();
+	showindexvideo();
 	$(".div-project-center-btn-img").mouseover(function () { 
 		initIndexProjectBtnMous(this);
 	});
@@ -37,7 +38,6 @@ $(function() {
 	});
 
 	initLender();
-	showindexvideo();
 	
 })
 //resize
@@ -117,6 +117,7 @@ function indexProjectShow() {
 function showindexvideo() { 
 	var divw = $("#div-video-show").width(); 
 	$("#div-index-video-show").width(divw);
+	$("#div-index-video-show video").width(divw); 
 	initvido();
 
 }
