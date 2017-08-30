@@ -1047,12 +1047,13 @@ background-color: black;
 	text-align: center;
 }
 .div-company-pos-title {
-	line-height: 150px;
+	line-height: 50px;
 	color: #ffa60a;
 	font: bold;
 	letter-spacing: 3px;
 	font-size: 28px;
 	text-align: center;
+	margin-top: 50px;
 }
 .div-company-pos-desc {
 	width: 50%;
@@ -1082,6 +1083,35 @@ background-color: black;
 	width: 100%;
 }
 
+#index_div_company_cul-index .div-company-pos-desc-index {
+	width: 50%;
+	margin: 0 auto;
+	position: relative;
+	top: 10px;
+	color: #fff;
+	font-size: 26px;
+}
+.div-company-pos-title-index {
+	line-height: 30px;
+	color: #ffa60a;
+	font: bold;
+	letter-spacing: 3px;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 30px;
+}
+.div-company-pos-desc-index {
+	width: 50%;
+	margin: 0 auto;
+	position: relative;
+	top: 10px;
+	font-size: 14px;
+}
+#index_div_company_cul-index {
+	min-height: 300px;
+	background-color: #2c3e50;
+	text-align: center;
+}
 /*index-cup*/
 .d-company-cul {
 	width: 900px;
@@ -1441,7 +1471,16 @@ background-color: black;
 	height: 180px;
 	margin-bottom: 20px;
 }
-
+.w-ind-tit-title-left-projectinfo {
+	font-size: 24px;
+	color: #000;
+	font-weight: 500px;
+}
+.w-ind-tit-title-cent-projectinfo {
+	font-style: italic;
+	color: #777777;
+	font-size: 18px;
+}
 /*******projectinfo end*******/
 
 /*******about start*******/
