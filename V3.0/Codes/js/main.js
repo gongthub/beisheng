@@ -8,37 +8,37 @@ $(function() {
 	wbannertop();
 	indexProjectShow();
 	showindexvideo();
-	$(".div-project-center-btn-img").mouseover(function () { 
+	$(".div-project-center-btn-img").mouseover(function() {
 		initIndexProjectBtnMous(this);
 	});
-	
-	$(".d-new-center-a").mouseenter(function(){
-		$(this).find(".w-news-item-center-img-m").css("display","none");
-		$(this).find(".w-news-item-center-img-o").css("display","block");
-		$(this).find(".w-news-item-center-span-title").attr("class","w-news-item-center-span-title-hover")
-		
+
+	$(".d-new-center-a").mouseenter(function() {
+		$(this).find(".w-news-item-center-img-m").css("display", "none");
+		$(this).find(".w-news-item-center-img-o").css("display", "block");
+		$(this).find(".w-news-item-center-span-title").attr("class", "w-news-item-center-span-title-hover")
+
 	});
-	$(".d-new-center-a").mouseleave(function(){
-		$(this).find(".w-news-item-center-img-m").css("display","block");
-		$(this).find(".w-news-item-center-img-o").css("display","none");
-		$(this).find(".w-news-item-center-span-title-hover").attr("class","w-news-item-center-span-title")
-		
+	$(".d-new-center-a").mouseleave(function() {
+		$(this).find(".w-news-item-center-img-m").css("display", "block");
+		$(this).find(".w-news-item-center-img-o").css("display", "none");
+		$(this).find(".w-news-item-center-span-title-hover").attr("class", "w-news-item-center-span-title")
+
 	});
-	$(".w-lender-area-a").mouseenter(function(){
-		$(this).find(".w-lender-area-center").attr("class","w-lender-area-center-hover")
-		$(this).find(".w-lender-area-center-text").attr("class","w-lender-area-center-text-hover")
-		$(this).find(".w-lender-area-center-text-en").attr("class","w-lender-area-center-text-en-hover")
-		
+	$(".w-lender-area-a").mouseenter(function() {
+		$(this).find(".w-lender-area-center").attr("class", "w-lender-area-center-hover")
+		$(this).find(".w-lender-area-center-text").attr("class", "w-lender-area-center-text-hover")
+		$(this).find(".w-lender-area-center-text-en").attr("class", "w-lender-area-center-text-en-hover")
+
 	});
-	$(".w-lender-area-a").mouseleave(function(){
-		$(this).find(".w-lender-area-center-hover").attr("class","w-lender-area-center")
-		$(this).find(".w-lender-area-center-text-hover").attr("class","w-lender-area-center-text")
-		$(this).find(".w-lender-area-center-text-en-hover").attr("class","w-lender-area-center-text-en")
-		
+	$(".w-lender-area-a").mouseleave(function() {
+		$(this).find(".w-lender-area-center-hover").attr("class", "w-lender-area-center")
+		$(this).find(".w-lender-area-center-text-hover").attr("class", "w-lender-area-center-text")
+		$(this).find(".w-lender-area-center-text-en-hover").attr("class", "w-lender-area-center-text-en")
+
 	});
 
 	initLender();
-	
+
 })
 //resize
 $(window).resize(function() {
@@ -66,7 +66,6 @@ function wbannertop() {
 	//$('.w-indexbanner').css('margin-top',wnavhigh);
 }
 
-
 //首页工程项目展示
 function initIndexProjectBtnMous(e) {
 	if(!$(e).hasClass("div-project-center-btn-img-active")) {
@@ -91,7 +90,7 @@ function initIndexProjectBtn() {
 	var showdiv = $(".div-project-center-btn-img");
 	if(showdiv != undefined && showdiv.length > 0) {
 		for(var i = 0; i < showdiv.length; i++) {
-			if($(showdiv[i]).hasClass("div-project-center-btn-img-active")) { 
+			if($(showdiv[i]).hasClass("div-project-center-btn-img-active")) {
 				showIdT = $(showdiv[i]).attr("showid");
 			}
 		}
@@ -114,10 +113,10 @@ function indexProjectShow() {
 	}
 }
 
-function showindexvideo() { 
-	var divw = $("#div-video-show").width(); 
+function showindexvideo() {
+	var divw = $("#div-video-show").width();
 	$("#div-index-video-show").width(divw);
-	$("#div-index-video-show video").width(divw); 
+	$("#div-index-video-show video").width(divw);
 	initvido();
 
 }
@@ -148,13 +147,38 @@ function initvido() {
 
 	});
 }
-function initLender()
-{
-var lenderdivs=	$(".div-lender-row").find(".div-lender-rowitemshow");
-	if(lenderdivs!=undefined&&lenderdivs.length>4)
-	{ 
-		var htmls="<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'></div>";
+
+function initLender() {
+	var lenderdivs = $(".div-lender-row").find(".div-lender-rowitemshow");
+	if(lenderdivs != undefined && lenderdivs.length > 4) {
+		var htmls = "<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'></div>";
 		$(lenderdivs[3]).after(htmls);
 		$("#txtshow").val($(".div-lender-row").html())
 	}
+}
+
+function initShow(ele, showEle, eleEvent,w,h) {
+	//打开窗口
+	$(ele).on(eleEvent, function(event) {
+		event.preventDefault();
+		$(showEle).addClass('is-visible');
+		var elecontainer=$(showEle).find(".cd-popup-container");
+		$(elecontainer).width(w);
+		$(elecontainer).height(h);
+	});
+	//关闭窗口
+	$(showEle).on('click', function(event) {
+		if($(event.target).is('.cd-popup-close') || $(event.target).is(showEle)) {
+			event.preventDefault();
+			$(this).removeClass('is-visible');
+			
+		}
+	});
+	//ESC关闭
+	$(document).keyup(function(event) {
+		if(event.which == '27') {
+			$(showEle).removeClass('is-visible');
+		}
+	});
+
 }
